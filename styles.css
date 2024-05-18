@@ -1,0 +1,137 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.title__description li{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color:#2D2D2D;
+}
+
+.content__link{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: auto;
+    color:#2D2D2D;
+    margin-top: auto;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-between;
+    max-width: 1320px;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card__block{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 4px;
+    border: 2px;
+}
+
+.plumbing{
+    border: 2px solid #179D2E;
+}
+
+.drywall{
+    border: 2px solid #0177B8;
+}
+
+.furniture{
+    border: 2px solid #F5AF23;
+}
+
+.electrical{
+    border: 2px solid #F02E2C;
+}
+
+.windows{
+    border: 2px solid #179D2E;
+}
+
+.mounting{
+    border: 2px solid #0177B8;
+}
+
+.appliance{
+    border: 2px solid #F5AF23;
+}
+
+.smart--home{
+    border: 2px solid #F02E2C;
+}
+
+.outdoor{
+    border: 2px solid #179D2E;
+}
+
+.content__icon{
+    margin-left: auto;
+}
+
+.common_block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: left;
+    color: #181833;
+}
+
+@media (max-width:1150px) {
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:900px) {
+    .wrapper{
+        padding: 0 15px;
+        gap: 12px;
+    }
+    .card__block{
+        padding: 12px;
+        gap: 12px;
+    }
+    .content__icon svg {
+        max-width: 70px;
+        height: auto;
+        object-fit: cover;
+    }
+    .title{
+        font-size: 22px;
+        line-height: 26px;
+        margin: 0 0 10px;
+    }
+    .title__description li, .content__link{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .title__description{
+        margin: 0 0 10px;
+        padding-inline-start: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        gap: 10px;
+    }
+}
+
